@@ -9,7 +9,6 @@ class Dialog  extends React.Component{
     constructor(props){
         super(props)
         this.props = props;
-       
     }
     
     createDialogMask(){
@@ -114,6 +113,7 @@ Dialog.propTypes = {
     style: propTypes.object, // 自定义样式dialog的body的样式	
     maskStyle: propTypes.object, //自定义样式mask的body的样式
     title: propTypes.string, 
+    content: propTypes.string,
     closeCallback: propTypes.func, // 控制dialog关闭的方法
     visible: propTypes.bool,
     maskCloseable: propTypes.bool,

@@ -1,7 +1,7 @@
 ### 目录结构
 .
 ├── README.md
-├── component (ui组件npm包)
+├── component (npm包)
 │   ├── Alert
 │   ├── Dialog
 │   ├── FullModal
@@ -12,7 +12,7 @@
 ├── package-lock.json
 ├── package.json
 ├── public (手机模拟器的页面)
-│   ├── dist (打包生成手机模拟器的页面)
+│   ├── dist (打包生成静态页面)
 │   ├── index.html
 │   ├── index.js
 │   ├── package-lock.json
@@ -31,5 +31,3 @@
 │   ├── serviceWorker.js
 │   └── webpack.config.js
 └── yarn.lock
-
-15 directories, 16 files
