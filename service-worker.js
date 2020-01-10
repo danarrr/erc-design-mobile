@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/erc-design-mobile/precache-manifest.df53500dcef554fe1835e6919db4e213.js"
+  "/erc-design-mobile/precache-manifest.e7ff4a63f928495da750eeb60e8f2930.js"
 );
 
 self.addEventListener('message', (event) => {

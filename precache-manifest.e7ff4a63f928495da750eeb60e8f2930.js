@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed111616ee54a34bfdbc2f5c4ab6a09e",
+    "revision": "ec3e5e7ea11d4a050f5915b1a3fcaa6e",
     "url": "/erc-design-mobile/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/erc-design-mobile/static/css/2.62eb5bb5.chunk.css"
   },
   {
-    "revision": "ae8b11287daffb4613fe",
+    "revision": "a8228643d0eb1d5845fa",
     "url": "/erc-design-mobile/static/css/main.e788bf04.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/erc-design-mobile/static/js/2.d75ac810.chunk.js"
   },
   {
-    "revision": "ae8b11287daffb4613fe",
-    "url": "/erc-design-mobile/static/js/main.abd3af57.chunk.js"
+    "revision": "a8228643d0eb1d5845fa",
+    "url": "/erc-design-mobile/static/js/main.8c5da21e.chunk.js"
   },
   {
     "revision": "6238280bf4eeb68b5087",
