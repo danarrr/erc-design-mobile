@@ -1,0 +1,51 @@
+{
+  "name": "my-app",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.20.1",
+    "css-loader": "^3.4.1",
+    "danarrr-uidesign": "^1.0.8",
+    "gh-pages": "^2.0.1",
+    "github-markdown-css": "^2.10.0",
+    "guido": "3.6.6",
+    "highlight.js": "^9.17.1",
+    "html-loader": "^0.5.5",
+    "json-loader": "^0.5.7",
+    "markdown-loader": "^3.0.0",
+    "marked": "^0.4.0",
+    "node-sass": "^4.13.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown-loader": "^1.1.14",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start && npm run setconfig",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "setconfig": "node ./src/config/setConfig.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "https://danarrr.github.io/erc-design",
+  "devDependencies": {
+    "axios": "^0.19.0"
+  }
+}

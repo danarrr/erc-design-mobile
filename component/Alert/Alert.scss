@@ -1,0 +1,55 @@
+$cls: '.danarrr-alert';
+
+#{$cls} {
+  font-size: 0.05rem;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  top: 0;
+
+  &__box {
+    background: #fff;
+    position: absolute;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    min-width: 80%;
+  }
+ 
+  &__title {
+    font-size: 0.32rem;
+    font-weight: 200;
+    text-align: left;
+    padding: 0.2rem;
+    border: 0.01rem solid #f0f0f0;
+
+  }
+
+  &__children{
+    padding: 0.2rem;
+    text-align: left;
+    min-height: 3rem;
+  }
+
+  &__buttons {
+    width: 100%;
+    font-size: 0.32rem;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+        background: green;
+        padding: 0.2rem;
+        border-top: 0.01rem solid green;
+        color: #fff;
+        text-align: center;
+        flex: auto;
+    }
+  }
+  
+}
