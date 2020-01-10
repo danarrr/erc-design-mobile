@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/erc-design-mobile/static/css/main.e788bf04.chunk.css",
+    "main.js": "/erc-design-mobile/static/js/main.881d0e04.chunk.js",
+    "main.js.map": "/erc-design-mobile/static/js/main.881d0e04.chunk.js.map",
+    "runtime~main.js": "/erc-design-mobile/static/js/runtime~main.f2d56cc7.js",
+    "runtime~main.js.map": "/erc-design-mobile/static/js/runtime~main.f2d56cc7.js.map",
+    "static/css/2.62eb5bb5.chunk.css": "/erc-design-mobile/static/css/2.62eb5bb5.chunk.css",
+    "static/js/2.d75ac810.chunk.js": "/erc-design-mobile/static/js/2.d75ac810.chunk.js",
+    "static/js/2.d75ac810.chunk.js.map": "/erc-design-mobile/static/js/2.d75ac810.chunk.js.map",
+    "index.html": "/erc-design-mobile/index.html",
+    "precache-manifest.4cb46a7e831a3c841e7ec75cc3602b66.js": "/erc-design-mobile/precache-manifest.4cb46a7e831a3c841e7ec75cc3602b66.js",
+    "service-worker.js": "/erc-design-mobile/service-worker.js",
+    "static/css/2.62eb5bb5.chunk.css.map": "/erc-design-mobile/static/css/2.62eb5bb5.chunk.css.map",
+    "static/css/main.e788bf04.chunk.css.map": "/erc-design-mobile/static/css/main.e788bf04.chunk.css.map",
+    "static/media/App.css": "/erc-design-mobile/static/media/logo.a3729403.png"
+  }
+}
