@@ -22770,4 +22770,4 @@ exports.default = App;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=popup.js.map
+//# sourceMappingURL=Popup.js.map
