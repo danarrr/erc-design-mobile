@@ -557,6 +557,11 @@
           flex: auto;
 }
 
+.danarrr-modal__buttons > div:first-child {
+  background: #fff;
+  color: green;
+}
+
 .danarrr-modal__radios {
   width: 100%;
   font-size: 0.32rem;
@@ -694,18 +699,18 @@
           flex: auto;
 }
 @charset "UTF-8";
-.danarrr-skeleton {
+.danarrr-skeleton-item, .danarrr-skeleton-box {
   position: relative;
   overflow: hidden;
-  border: none !important;
   border-radius: 0.1rem;
   font-size: 0.32rem;
   background-color: transparent !important;
   background-image: none !important;
+  z-index: -1;
   /* 下面这部分都是自定义的，看需求修改 */
 }
 
-.danarrr-skeleton::after {
+.danarrr-skeleton-item::after, .danarrr-skeleton-box::after {
   content: '';
   position: absolute;
   left: 0;
@@ -717,11 +722,11 @@
   display: block;
 }
 
-.danarrr-skeleton:not(.not-round)::after {
+.danarrr-skeleton-item:not(.not-round)::after, .danarrr-skeleton-box:not(.not-round)::after {
   border-radius: 0.1rem;
 }
 
-.danarrr-skeleton:not(.not-before)::before {
+.danarrr-skeleton-item:not(.not-before)::before, .danarrr-skeleton-box:not(.not-before)::before {
   position: absolute;
   top: 0;
   width: 30%;
@@ -738,7 +743,7 @@
   display: block;
 }
 
-.danarrr-skeleton.badge::after {
+.danarrr-skeleton-item.badge::after, .danarrr-skeleton-box.badge::after {
   background-color: #F8FAFC;
 }
 
@@ -763,6 +768,7 @@
 }
 body {
   background: #fff !important;
+  margin: 0 !important;
 }
 
 .mobile-page__header, .mobile-page__body {

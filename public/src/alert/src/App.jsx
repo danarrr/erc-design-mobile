@@ -28,7 +28,7 @@ export default class App extends Component {
     render() {
       const setAlertConfig = {
         defalutProps:{
-          title: '只有标题的dialog', 
+          title: '只有标题的', 
           buttons:[{ text: '关闭', onPress: () => new Promise( ( resolve ) => {
             this.closeAlert();
           } ),}],
@@ -82,22 +82,22 @@ export default class App extends Component {
           title: "输入标题。。",
         },
         maskCloseProps:{
-            maskCloseable: true, 
-            buttons:[{ 
-              text: '关闭',
-              onPress: () => new Promise( ( resolve ) => {
-                this.closeAlert();
-              }),
-            },{ 
-              text: '其他',
-              onPress: () => new Promise( ( resolve ) => {
-                this.closeAlert();
-              }),
-            }],
-            content: "正文",
-            title: "输入标题。。",
-          },
-        }
+          maskCloseable: true, 
+          buttons:[{ 
+            text: '关闭',
+            onPress: () => new Promise( ( resolve ) => {
+              this.closeAlert();
+            }),
+          },{ 
+            text: '其他',
+            onPress: () => new Promise( ( resolve ) => {
+              this.closeAlert();
+            }),
+          }],
+          content: "正文",
+          title: "输入标题。。",
+        },
+      }
     
 
         return (
@@ -114,7 +114,8 @@ export default class App extends Component {
                     <button onClick={this.showAlert.bind(this, setAlertConfig.allShowProps)}>有标题和正文</button>    
                     <button onClick={this.showAlert.bind(this, setAlertConfig.buttonsProps)}>双按钮</button>    
                     <button onClick={this.showAlert.bind(this, setAlertConfig.radioProps)}>单选框</button>    
-                    <button onClick={this.showAlert.bind(this, setAlertConfig.maskCloseProps)}>点击mask关闭没生效</button>    
+                    <button onClick={this.showAlert.bind(this, setAlertConfig.maskCloseProps)}>点击mask关闭弹窗</button>    
+                    <button>todo 可输入的弹框</button>    
                   </div>
                 </div>
 
