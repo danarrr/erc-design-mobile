@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.scss';
-import danarrrDesign from 'danarrr-uidesign/dist'
+import danarrrDesign from 'danarrr-uidesign'
 const Popup = danarrrDesign.Popup;
 
 export default class App extends Component {

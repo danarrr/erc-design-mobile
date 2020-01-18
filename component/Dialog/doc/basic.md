@@ -1,16 +1,16 @@
-Dialog对话框 基建组件
+Dialog 基础对话框
 
 ## API
 
 适用平台：WEB
 
-创建一个对话框，modal和alert都是基于dialog进行封装, 可以在此组件上添加拓展配置。
+创建一个对话框，modal是基于dialog进行封装, 可以在此组件上添加拓展配置, 作为基建组件。
 
 ## Dialog
 
 | 属性               | 说明                                                           | 类型       | 默认值     |
 | ------------------ | -------------------------------------------------------------- | ---------- | ---------- |
-| prefixCls          | 组件的公用className前序                                        | string     | zds-dialog |
+| prefixCls          | 组件的公用className前序                                        | string     | danarrr-dialog |
 | className          | 定义dialog最外层元素的class                                    | string     | 无         |
 | boxClassName       | 定义dialog的body class                                         | string     | 无         |
 | maskClassName      | 定义dialog的mask class                                         | string     | 无         |
@@ -18,12 +18,11 @@ Dialog对话框 基建组件
 | maskStyle          | 定义dialog的mask的样式                                         | string     | 无         |
 | title              | dialog显示的title                                              | JSXElement | 无         |
 | content             | dialog显示的footer                                             | JSXElement | 无         |
+| maskCloseable            | 点击mask层可关闭弹窗                                             | boolean    | false      |
 | visible            | 控制dialog执行动画                                             | boolean    | false      |
 | closeCallback          | 控制dialog关闭的方法                                             | func    | false无    |
 | showCloseBtn        | 是否显示关闭按钮                                                 | boolean    | false      |
 | transitionName        | 动画弹出名称  | string   |            |
-
-默认dialog会直接显示，`visible`是用来控制dialog是否执行动画效果，当`visible`为`true`时会添加`enter`动画钩子，当为`true`改为`false`的时候会执行`leave`动画钩子。
 
 
 简单的例子
@@ -36,17 +35,4 @@ Dialog对话框 基建组件
 >
     <div className='modal-text'>这是一个文案...</div>
 </Dialog>
-```
-
-关于`transitionName`有固定的样式配置。如果只是传入字符串，会在显示时添加对应class字符串，关闭时去掉对应的class字符串，但是如果传入的是一个对象，必须提供4个动画钩子：
-
-```js
-// todo
-// 自定义动画钩子
-transitionName={{
-    enter: 'zds-123-enter',
-    enterActive: 'zds-123-enter-active',
-    leave: 'zds-123-leave',
-    leaveActive: 'zds-123-leave-active'
-}}
 ```

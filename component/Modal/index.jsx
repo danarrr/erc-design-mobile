@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Modal from './Modal';
-import Error from './../../_utils/error.jsx'
+import Error from '../../_utils/error'
 import './Modal.scss';
 
 export default class ModalComponent extends PureComponent{

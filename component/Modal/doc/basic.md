@@ -1,12 +1,17 @@
-基建对话框
+Modal 对话框
 
 ## API
 
 适用平台：WEB
 
-创建一个对话框，modal和alert都是基于dialog进行封装, 可以在此组件上添加拓展配置。
+用作显示系统的重要信息，并请求用户进行操作反馈，eg：删除某个重要内容时，弹出 Modal 进行二次确认。
 
-## Dialog
+## 规则
+- 尽可能少用会打断用户操作。
+- 用户按钮控制在2-3个，此组件三个以上按钮展示不同样式。
+- 用户使用习惯, 把常用点击按钮放在右侧，取消按钮始终放在右侧。
+
+## Modal
 
 | 属性               | 说明                                                           | 类型       | 默认值     |
 | ------------------ | -------------------------------------------------------------- | ---------- | ---------- |
@@ -27,43 +32,33 @@
 | boxAnimated        | box动画事件，返回一个参数说明当前结束的动画属于enter还是leave  | function   |            |
 | maskAnimated       | mask动画事件，返回一个参数说明当前结束的动画属于enter还是leave | function   |            |
 
-默认dialog会直接显示，`visible`是用来控制dialog是否执行动画效果，当`visible`为`true`时会添加`enter`动画钩子，当为`true`改为`false`的时候会执行`leave`动画钩子。
 
-
-简单的例子
-
-```JavaScript
-<Dialog
-    visible={true}
-    maskClose={true}
-    closeCallback={console.log(123)}
->
-    <div className='modal-text'>这是一个文案...</div>
-</Dialog>
+## 简单的例子
+### 基本配置
+```javascript
+const configProps = {
+    title: '只有标题的dialog', 
+    buttons:[{ 
+        text: '关闭', 
+        onPress: () => new Promise(( resolve ) => {
+        this.closeModal();})
+    }],
+}
 ```
 
-关于`transitionName`和`maskTransitionName`有固定的样式配置。如果只是传入字符串，会在显示时添加对应class字符串，关闭时去掉对应的class字符串，但是如果传入的是一个对象，必须提供4个动画钩子：
-
-```js
-// 内置了一些动画钩子
-zoom: {
-    enter: 'zds-zoom-enter',
-    enterActive: 'zds-zoom-enter-active',
-    leave: 'zds-zoom-leave',
-    leaveActive: 'zds-zoom-leave-active'
-},
-fade: {
-    enter: 'zds-fade-enter',
-    enterActive: 'zds-fade-enter-active',
-    leave: 'zds-fade-leave',
-    leaveActive: 'zds-fade-leave-active'
+### 全屏模态框
+```javascript
+const fullModalProps ={
+    maskCloseable: true, 
+    children: "正文正文正文正文正文正文正文正文正文正文正文正文",
+    title: "输入标题。。",
+    modalType: "full",
 }
-
-// 自定义动画钩子
-transitionName={{
-    enter: 'zds-123-enter',
-    enterActive: 'zds-123-enter-active',
-    leave: 'zds-123-leave',
-    leaveActive: 'zds-123-leave-active'
-}}
+```
+```html      
+<Modal
+    {...configProps}
+    visible={this.state.modalVisible}
+    >
+</Modal>
 ```

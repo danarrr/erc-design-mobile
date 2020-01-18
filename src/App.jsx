@@ -11,7 +11,7 @@ import Mobile from './components/mobile/index.jsx';
 
 import { Layout, Menu, } from 'antd';
 
-import { configData, componentList } from './config/config.json';
+import { configData, componentList, categoryData } from './config/config.json';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -21,8 +21,16 @@ class App extends React.Component {
     super( props );
     this.state = {
       setContent: 'Dialog', //默认展示第一个tab
+      configType: 'categoryData', // 默认展示首页
     }
   } 
+
+  setHtml(){
+    switch (this.state.configType) {
+      case 'configData': return configData[`${this.state.setContent}`].mdContent;
+      case 'categoryData': return categoryData.index.mdContent;
+    }
+  }
 
   render(){
     return (
@@ -39,6 +47,14 @@ class App extends React.Component {
                 defaultOpenKeys={['base_component']}
                 
               >
+                <Menu.Item key="start"
+                onClick={e => {
+                  this.setState({
+                    configType: 'categoryData'
+                  })
+                }}>
+                  <span>Get Start</span>
+                </Menu.Item>
                 <SubMenu
                   key="base_component"
                   title={<span> Base Components</span>}
@@ -48,7 +64,10 @@ class App extends React.Component {
                     return (
                     <Menu.Item 
                       key={item}  
-                      onClick={item => this.setState({setContent: item.key})}                      
+                      onClick={item => this.setState({
+                        setContent: item.key,
+                        configType: 'configData'
+                      })}                      
                     >{item}
                     </Menu.Item>)
                   })
@@ -57,9 +76,9 @@ class App extends React.Component {
               </Menu>
             </Sider>
           <Layout>
-            <Content className='markdown-body' dangerouslySetInnerHTML={{ __html: configData[`${this.state.setContent}`].mdContent }}>
+            <Content className='markdown-body' dangerouslySetInnerHTML={{ __html:  this.setHtml()}}>
             </Content>
-            <Mobile index={this.state.setContent} />
+            {this.state.configType === 'configData' && <Mobile index={this.state.setContent} />}
           </Layout>
         </Layout>
       </Layout>

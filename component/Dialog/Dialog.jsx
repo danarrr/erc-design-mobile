@@ -118,7 +118,7 @@ Dialog.propTypes = {
     visible: propTypes.bool,
     maskCloseable: propTypes.bool,
     showCloseBtn: propTypes.bool,
-    isFixScrollThrough: propTypes.bool,
-    confirmBtn: propTypes.func,
+    // isFixScrollThrough: propTypes.bool, //滑动穿透
+    // confirmBtn: propTypes.func,
 }
 export default Dialog;

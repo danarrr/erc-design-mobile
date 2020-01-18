@@ -60,9 +60,9 @@ async function setComponentConfig( componentList ) {
         }
 
 
-        // configData.index = {
-        //     mdContent: marked( fs.readFileSync( path.join( __dirname, '../../docs/index.md' ), 'utf8' ), mdOptions )
-        // };
+        categoryData.index = {
+            mdContent: marked( fs.readFileSync( path.join( __dirname, './docs/index.md' ), 'utf8' ), mdOptions )
+        };
         // configData.change = {
         //     mdContent: marked( fs.readFileSync( path.join( __dirname, '../../docs/change.md' ), 'utf8' ), mdOptions )
         // };

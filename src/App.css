@@ -43,10 +43,14 @@
   background-size: 50px;
 }
 
-.ant-layout-sider-children {
+.ant-layout-sider-children, .ant-layout {
   background: #fff;
 }
 
+.ant-layout-header {
+  padding: 10px 50px;
+  height: 80px;
+}
 .markdown-body {
   padding: 30px;
 } 

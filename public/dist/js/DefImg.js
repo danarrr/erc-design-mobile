@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "../";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 177);
+/******/ 	return __webpack_require__(__webpack_require__.s = 152);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -22750,136 +22750,18 @@ DefImg.defaultProps = {
 module.exports = "data:image/jpeg;base64,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"
 
 /***/ }),
-/* 141 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-var _assign = __webpack_require__(142);
-
-var _assign2 = _interopRequireDefault(_assign);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _assign2.default || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-/***/ }),
-/* 142 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(143), __esModule: true };
-
-/***/ }),
-/* 143 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(144);
-module.exports = __webpack_require__(2).Object.assign;
-
-
-/***/ }),
-/* 144 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.3.1 Object.assign(target, source)
-var $export = __webpack_require__(6);
-
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(145) });
-
-
-/***/ }),
-/* 145 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 19.1.2.1 Object.assign(target, source, ...)
-var DESCRIPTORS = __webpack_require__(4);
-var getKeys = __webpack_require__(24);
-var gOPS = __webpack_require__(42);
-var pIE = __webpack_require__(25);
-var toObject = __webpack_require__(23);
-var IObject = __webpack_require__(65);
-var $assign = Object.assign;
-
-// should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(17)(function () {
-  var A = {};
-  var B = {};
-  // eslint-disable-next-line no-undef
-  var S = Symbol();
-  var K = 'abcdefghijklmnopqrst';
-  A[S] = 7;
-  K.split('').forEach(function (k) { B[k] = k; });
-  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
-}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
-  var T = toObject(target);
-  var aLen = arguments.length;
-  var index = 1;
-  var getSymbols = gOPS.f;
-  var isEnum = pIE.f;
-  while (aLen > index) {
-    var S = IObject(arguments[index++]);
-    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
-    var length = keys.length;
-    var j = 0;
-    var key;
-    while (length > j) {
-      key = keys[j++];
-      if (!DESCRIPTORS || isEnum.call(S, key)) T[key] = S[key];
-    }
-  } return T;
-} : $assign;
-
-
-/***/ }),
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
 /* 146 */,
 /* 147 */,
 /* 148 */,
 /* 149 */,
 /* 150 */,
 /* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22893,7 +22775,7 @@ var _reactDom = __webpack_require__(46);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(178);
+var _App = __webpack_require__(153);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -22902,20 +22784,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('root'));
 
 /***/ }),
-/* 178 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = undefined;
-
-var _extends2 = __webpack_require__(141);
-
-var _extends3 = _interopRequireDefault(_extends2);
 
 var _getPrototypeOf = __webpack_require__(81);
 
@@ -22941,7 +22819,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(179);
+__webpack_require__(154);
 
 var _danarrrUidesign = __webpack_require__(118);
 
@@ -22949,146 +22827,52 @@ var _danarrrUidesign2 = _interopRequireDefault(_danarrrUidesign);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Popup = _danarrrUidesign2.default.Popup;
+var DefImg = _danarrrUidesign2.default.DefImg;
 
 var App = function (_Component) {
-  (0, _inherits3.default)(App, _Component);
+    (0, _inherits3.default)(App, _Component);
 
-  function App(props) {
-    (0, _classCallCheck3.default)(this, App);
-
-    var _this = (0, _possibleConstructorReturn3.default)(this, (App.__proto__ || (0, _getPrototypeOf2.default)(App)).call(this, props));
-
-    _this.state = {
-      popupVisible: false
-    };
-    return _this;
-  }
-
-  (0, _createClass3.default)(App, [{
-    key: 'showPopup',
-    value: function showPopup(configProps) {
-      this.setState({
-        popupVisible: true,
-        configProps: configProps
-      });
+    function App(props) {
+        (0, _classCallCheck3.default)(this, App);
+        return (0, _possibleConstructorReturn3.default)(this, (App.__proto__ || (0, _getPrototypeOf2.default)(App)).call(this, props));
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
 
-      var setPopConfig = {
-        topProps: {
-          direction: 'top',
-          buttons: [{
-            text: '关闭'
+    (0, _createClass3.default)(App, [{
+        key: 'render',
+        value: function render() {
 
-          }],
-
-          content: "正文",
-          title: "输入标题。。"
-        },
-        bottomProps: {
-          buttons: [{
-            text: '关闭'
-
-          }],
-          direction: 'bottom',
-
-          content: "正文",
-          title: "输入标题。。"
-        },
-        leftProps: {
-          buttons: [{
-            text: '关闭'
-
-          }],
-          direction: 'left',
-
-          content: "正文",
-          title: "输入标题。。"
-        },
-        rightProps: {
-          buttons: [{
-            text: '关闭'
-
-          }],
-          direction: 'right',
-
-          content: "正文",
-          title: "输入标题。。"
+            return _react2.default.createElement(
+                'div',
+                { className: 'mobile-page' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'mobile-page__header' },
+                    _react2.default.createElement(
+                        'h1',
+                        { className: 'mobile-page__title' },
+                        'DefImg \u88C2\u56FE\u5904\u7406'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'mobile-page__body' },
+                    'description'
+                ),
+                _react2.default.createElement(DefImg, { isBackground: true, src: 'hha.jpg', className: 'car-thumbnail' })
+            );
         }
-      };
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'mobile-page' },
-        _react2.default.createElement(
-          'div',
-          { className: 'mobile-page__header' },
-          _react2.default.createElement(
-            'h1',
-            { className: 'mobile-page__title' },
-            'popup \u6ED1\u52A8\u5F39\u6846'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'mobile-page__body' },
-          _react2.default.createElement(
-            'div',
-            { className: 'mobile-page__btngroups' },
-            _react2.default.createElement(
-              'button',
-              { onClick: this.showPopup.bind(this, setPopConfig.bottomProps) },
-              '\u4ECE\u5E95\u90E8\u6ED1\u51FA\u5F39\u6846'
-            ),
-            _react2.default.createElement(
-              'button',
-              { onClick: this.showPopup.bind(this, setPopConfig.topProps) },
-              '\u4ECE\u9876\u90E8\u6ED1\u51FA\u5F39\u6846'
-            ),
-            _react2.default.createElement(
-              'button',
-              { onClick: this.showPopup.bind(this, setPopConfig.leftProps) },
-              '\u4ECE\u5DE6\u8FB9\u6ED1\u51FA\u5F39\u6846'
-            ),
-            _react2.default.createElement(
-              'button',
-              { onClick: this.showPopup.bind(this, setPopConfig.rightProps) },
-              '\u4ECE\u53F3\u8FB9\u6ED1\u51FA\u5F39\u6846'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          Popup,
-          (0, _extends3.default)({}, this.state.configProps, {
-            visible: this.state.popupVisible,
-            closeCallback: function closeCallback() {
-              _this2.setState({ popupVisible: false });
-            }
-          }),
-          _react2.default.createElement(
-            'div',
-            { className: 'modal-text' },
-            '\u8FD9\u662F\u4E00\u4E2A\u6587\u6848...'
-          )
-        )
-      );
-    }
-  }]);
-  return App;
+    }]);
+    return App;
 }(_react.Component);
 
 exports.default = App;
 
 /***/ }),
-/* 179 */
+/* 154 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=Popup.js.map
+//# sourceMappingURL=DefImg.js.map

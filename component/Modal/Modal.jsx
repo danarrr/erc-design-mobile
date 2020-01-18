@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 import propTypes from 'prop-types'; // todo类型检测
-import config from './../../_utils/prefix'
-import { throttle } from './../../_utils/throttleDebounce';
+import config from '../../_utils/prefix'
+import { throttle } from '../../_utils/throttleDebounce';
+import scrollThrough  from  '../../_utils/scrollThrough';
+// todo要解决滑动穿透  不然fullmodal没法用
 
-
-import Dialog  from './../../component/Dialog';
+import Dialog  from '../Dialog';
 
 export default class Modal extends PureComponent {
     constructor(props){
@@ -15,7 +16,6 @@ export default class Modal extends PureComponent {
             visible: this.props.visible,
         }
     }
-
 
     componentWillReceiveProps(newProps){
         if(this.state.visible !== newProps.visible){
@@ -33,11 +33,10 @@ export default class Modal extends PureComponent {
         return (<div {...item.props} onClick = {throttle(item.onPress)}>{item.text}</div>)
     }
 
-    close(){
-        // this.setAnimationName('leave');
-        // setTimeout(() => {
-        //     this.props.closeFn
-        // }, 200);
+    close = () =>{
+        this.setState({
+            visible: false
+        })
         // todo
         // this.closeCallback();
     }
@@ -47,17 +46,22 @@ export default class Modal extends PureComponent {
     }
     
     createFooter(){
-        const {buttons} = this.props;
-        return (
-            <div className={buttons.length > 2 ? classNames(`${this.props.prefixCls}__radios`):
-                classNames(`${this.props.prefixCls}__buttons`)}>
-                {buttons.map(item => {
-                    return this.createButton(item); // todo详细记录
-                })}
-            </div>
-        )
-    }
+        const {buttons, modalType} = this.props;
+        if(!buttons.length && !modalType) return false;
 
+        else {
+            return modalType === 'full' ?  
+            <div className={`${this.props.prefixCls}__closeicon`} onClick={this.close}></div>: 
+            (
+                <div className={buttons.length > 2 ? classNames(`${this.props.prefixCls}__radios`):
+                    classNames(`${this.props.prefixCls}__buttons`)}>
+                    {buttons.map(item => {
+                        return this.createButton(item); // todo详细记录
+                    })}
+                </div>
+            )
+        }
+    }
 
     setAnimationName(leaveOrNot){
         let name = this.props.transitionName;
@@ -80,6 +84,7 @@ export default class Modal extends PureComponent {
             closable,
             style,
             closeFn,
+            modalType
         } = this.props;
 
         return (
@@ -90,11 +95,11 @@ export default class Modal extends PureComponent {
                 visible={this.state.visible}
                 maskStyle={maskStyle}
                 maskCloseable={maskCloseable}
-                closeFn={this.close} // todo不可配置 关闭函数  如果是按钮呢
-                boxClassName={classNames(`${prefixCls}__box`, className)}
+                closeFn={this.close}
+                boxClassName={classNames(`${prefixCls}__${modalType==='full'? 'fullbox': 'box'}`, className)}
                 closeCallback={() => { this.closeCallback(); }}
                 title={this.createTitle(title)}
-                footer={closable || (buttons && buttons.length > 0) ? this.createFooter() : null}
+                footer={closable || this.createFooter()}
             >
                 <div className={classNames(`${prefixCls}__children`)}>
                     {children}
@@ -104,7 +109,7 @@ export default class Modal extends PureComponent {
     } 
 }
 
-Modal.defaultProps = {
+Modal.defaultProps = { // todo不正确
     prefixCls: `${config.cls}-modal`,
     maskTransitionName: `${config.cls}-fade`,
     style: {},
@@ -115,10 +120,11 @@ Modal.defaultProps = {
     closeFn:{},
     visible: false,
     title: '',
+    children: '',
     transitionName: `${config.cls}-zoom`,
     buttons: [],
     buttonDirection: 'horizontally',
     maskCloseable: false,
     transparent: false,
-    lang: 'cn'
+    modalType: null, // 模态框类型
 }

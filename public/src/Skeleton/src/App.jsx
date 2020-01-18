@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.scss';
-import danarrrDesign from 'danarrr-uidesign/dist'
+import danarrrDesign from 'danarrr-uidesign'
 const Skeleton = danarrrDesign.Skeleton;
 
 export default class App extends Component {

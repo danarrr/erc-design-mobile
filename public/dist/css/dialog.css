@@ -520,6 +520,22 @@
   min-width: 80%;
 }
 
+.danarrr-modal__fullbox {
+  background: #fff;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.danarrr-modal__fullbox .danarrr-modal__children {
+  padding: 0.2rem;
+  text-align: left;
+  min-height: 80%;
+  margin-bottom: 0.1rem;
+  overflow-y: scroll;
+}
+
 .danarrr-modal__title {
   font-size: 0.32rem;
   font-weight: 200;
@@ -532,6 +548,22 @@
   padding: 0.2rem;
   text-align: left;
   min-height: 3rem;
+}
+
+.danarrr-modal__closeicon {
+  margin: 0 auto;
+  border: 0.05rem solid grey;
+  color: grey;
+  border-radius: 50%;
+  text-align: center;
+  height: .5rem;
+  width: .5rem;
+  font-size: 0.38rem;
+  padding: 0.05rem;
+}
+
+.danarrr-modal__closeicon::before {
+  content: "\2716";
 }
 
 .danarrr-modal__buttons {
@@ -557,7 +589,7 @@
           flex: auto;
 }
 
-.danarrr-modal__buttons > div:first-child {
+.danarrr-modal__buttons > div:nth-child(2) {
   background: #fff;
   color: green;
 }
@@ -626,69 +658,6 @@
 }
 
 .danarrr-popup__buttons > div {
-  background: green;
-  padding: 0.2rem;
-  border-top: 0.01rem solid green;
-  color: #fff;
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-}
-.danarrr-alert {
-  font-size: 0.05rem;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 0;
-  top: 0;
-}
-
-.danarrr-alert__box {
-  background: #fff;
-  position: absolute;
-  border-radius: 0.2rem;
-  overflow: hidden;
-  min-width: 80%;
-}
-
-.danarrr-alert__title {
-  font-size: 0.32rem;
-  font-weight: 200;
-  text-align: left;
-  padding: 0.2rem;
-  border: 0.01rem solid #f0f0f0;
-}
-
-.danarrr-alert__children {
-  padding: 0.2rem;
-  text-align: left;
-  min-height: 3rem;
-}
-
-.danarrr-alert__buttons {
-  width: 100%;
-  font-size: 0.32rem;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.danarrr-alert__buttons > div {
   background: green;
   padding: 0.2rem;
   border-top: 0.01rem solid green;

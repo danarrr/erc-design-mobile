@@ -1,3 +1,36 @@
+body {
+  background: #fff !important;
+  margin: 0 !important;
+}
+
+.mobile-page__header, .mobile-page__body {
+  padding: 0.2rem 0.2rem 0 0.2rem;
+}
+
+.mobile-page__title {
+  font-size: .4rem;
+  color: grey;
+}
+
+.mobile-page__text {
+  font-size: .28rem;
+  color: #333;
+  padding: .2rem 0;
+}
+
+.mobile-page__btngroups {
+  text-align: center;
+}
+
+.mobile-page__btngroups button {
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 0.2rem;
+  border-radius: .08rem;
+  color: #fff;
+  font-size: .3rem;
+  background-color: #164ab0;
+}
 .danarrr-dialog {
   font-size: 0.05rem;
   position: fixed;
@@ -735,38 +768,5 @@
     left: 150%;
   }
 }
-body {
-  background: #fff !important;
-  margin: 0 !important;
-}
 
-.mobile-page__header, .mobile-page__body {
-  padding: 0.2rem 0.2rem 0 0.2rem;
-}
-
-.mobile-page__title {
-  font-size: .4rem;
-  color: grey;
-}
-
-.mobile-page__text {
-  font-size: .28rem;
-  color: #333;
-  padding: .2rem 0;
-}
-
-.mobile-page__btngroups {
-  text-align: center;
-}
-
-.mobile-page__btngroups button {
-  width: 100%;
-  height: 1rem;
-  margin-bottom: 0.2rem;
-  border-radius: .08rem;
-  color: #fff;
-  font-size: .3rem;
-  background-color: #164ab0;
-}
-
-/*# sourceMappingURL=Skeleton.css.map*/
+/*# sourceMappingURL=DefImg.css.map*/
