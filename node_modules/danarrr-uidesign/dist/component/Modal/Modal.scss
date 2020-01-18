@@ -19,6 +19,22 @@ $cls: '.danarrr-modal';
     overflow: hidden;
     min-width: 80%;
   }
+
+  &__fullbox {
+    background: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+    #{$cls}__children{
+      padding: 0.2rem;
+      text-align: left;
+      min-height: 80%;
+      margin-bottom: 0.1rem;
+      overflow-y: scroll;
+    }
+  }
  
   &__title {
     font-size: 0.32rem;
@@ -35,6 +51,21 @@ $cls: '.danarrr-modal';
     min-height: 3rem;
   }
 
+  &__closeicon {
+    margin: 0 auto;
+    border: 0.05rem solid grey;
+    color: grey;
+    border-radius: 50%;
+    text-align: center;
+    height: .5rem;
+    width: .5rem;
+    font-size: 0.38rem;
+    padding: 0.05rem;
+    &::before {
+      content: "\2716";
+    }
+  }
+
   &__buttons {
     width: 100%;
     font-size: 0.32rem;
@@ -43,6 +74,11 @@ $cls: '.danarrr-modal';
     justify-content: space-between;
 
     >div {
+        &:nth-child(2){
+          background: #fff;
+          color: green;
+        }
+
         background: green;
         padding: 0.2rem;
         border-top: 0.01rem solid green;

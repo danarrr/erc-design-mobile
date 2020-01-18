@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.scss';
-import danarrrDesign from 'danarrr-uidesign/dist';
+import danarrrDesign from 'danarrr-uidesign';
 const Dialog = danarrrDesign.Dialog;
 export default class App extends Component {
     constructor(props) {
