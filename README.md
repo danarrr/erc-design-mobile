@@ -1,4 +1,5 @@
 ### 目录结构
+```markdown
 .
 ├── README.md
 ├── component (npm包)
@@ -31,3 +32,4 @@
 │   ├── serviceWorker.js
 │   └── webpack.config.js
 └── yarn.lock
+```
