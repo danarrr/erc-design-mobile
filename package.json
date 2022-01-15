@@ -12,7 +12,7 @@
     "html-loader": "^0.5.5",
     "json-loader": "^0.5.7",
     "markdown-loader": "^3.0.0",
-    "marked": "^0.4.0",
+    "marked": "^4.0.10",
     "node-sass": "^4.13.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
