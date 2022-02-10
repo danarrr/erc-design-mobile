@@ -20,7 +20,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "danarrr-uidesign": "^1.1.6",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "16.2.0",
     "react-dom": "16.2.0"
   }
